@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "esnext",
+    "module": "esnext",
+    "outDir": "out",
+    "sourceMap": true,
+    "moduleResolution": "node"
+  }
+}

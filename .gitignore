@@ -1,0 +1,7 @@
+# Don't accidentally commit sensitive files
+*.html
+*.csv
+# Lock files
+.~*
+node_modules
+out
