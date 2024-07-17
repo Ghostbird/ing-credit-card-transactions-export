@@ -6,7 +6,13 @@ Luckily they've got a web page where you can view all transactions in a single p
 
 ## Requirements
 
-`node` and `npx` binaries in your path. I've used node 22.3 but other versions may work too.
+`node`, `npm` and `npx` binaries in your path. I've used node 22.3 but other versions may work too.
+
+### Install modules
+
+```sh
+npm install
+```
 
 ## Getting the data
 
@@ -20,6 +26,9 @@ Luckily they've got a web page where you can view all transactions in a single p
     npx tsx main.ts INFILE > OUTFILE
     npx tsx main.tx < INFILE > OUTFILE
     ```
+
+Note: If you do not specify any input file and you just run `npx tsx main.ts` your terminal will wait for input. You can then paste (or type if you'd like to) the HTML.
+
 ## Data structure
 
 Note that there are two types of credit card transactions. Those in your native currency, and those in a foreign currency. The former ones only fill the first few columns of the CSV. The latter contains information about the target currency and amount, exchange rate and conversion fees.
