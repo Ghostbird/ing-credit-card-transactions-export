@@ -23,9 +23,3 @@ Luckily they've got a web page where you can view all transactions in a single p
 ## Data structure
 
 Note that there are two types of credit card transactions. Those in your native currency, and those in a foreign currency. The former ones only fill the first few columns of the CSV. The latter contains information about the target currency and amount, exchange rate and conversion fees.
-
-## Limitations
-
-The script is currently not set-up to handle credit card payments in currencies whose minor unit is not a hundredth. You'll run into issues when you've paid in e.g. Japanese Yen or Icelandic Króna. Check https://en.wikipedia.org/wiki/ISO_4217#List_of_ISO_4217_currency_codes to see which currencies apply.
-
-To facilitate that, add a currency-code to decimal places lookup function, call it with the original currency code of the current transaction and pass the result as a second argument to `csvStringAmount`. Then if you've got that working, please make a PR.
