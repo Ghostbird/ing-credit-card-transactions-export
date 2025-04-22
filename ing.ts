@@ -4,7 +4,7 @@ import { minorUnitDecimals, stringAmount } from './currency';
 
 export const decimalSeparator = '.';
 export const decimalCount = 2;
-export const statementSelector = `[data-tag-name="ing-ow-expandable-item"]`;
+export const statementSelector = `ing-ow-expandable-item`;
 export const csvHeaderLine = `Date,Description,Currency,Amount,Exchange rate,Original currency,Original amount,Conversion fee\n`;
 // ING‌ outputs a correct minus sign. Javascript only parses hyphens (word break characters) as negative prefix in numbers. Took me a LONG time to figure that out.
 export const minusSign = '−';
