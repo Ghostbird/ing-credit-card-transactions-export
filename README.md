@@ -1,5 +1,8 @@
 # ING Credit Card transactions export
 
+> [!WARNING]
+> I won't be maintaining this any more. ING upgraded their debit cards to support Mastercard, and therefore I don't need to have a separate credit card anymore to make online payments, and my bookkeeping has become much simpler.
+
 The Dutch ING bank offers downloads of account transactions in the widely supported CSV format, for all accounts. All accounts, except credit cards, that is. For credit cards you can only get a paper statement by mail within 5 working days. The mind boggles.
 
 Luckily they've got a web page where you can view all transactions in a single page, and you've got this script.
